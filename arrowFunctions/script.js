@@ -32,3 +32,18 @@ class Deck {
   }
 }
 
+
+/*Uso de operador ternario*/
+let accountBalance = 1000;
+const drone = 1002;
+
+let droneOnSale = drone - drone *0.03;
+
+let canAfford = (itemPrice, accountBalance)=>{
+  itemPrice>accountBalance
+  ? "No puedes comprarla!"
+  : 'puedes';
+}
+
+console.log(canAfford(drone,accountBalance));
+
